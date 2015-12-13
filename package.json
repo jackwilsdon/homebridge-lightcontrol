@@ -1,0 +1,22 @@
+{
+  "name": "homebridge-lightcontrol",
+  "version": "0.0.1",
+  "description": "lightcontrol plugin for homebridge: https://github.com/nfarina/homebridge",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jackwilsdon/homebridge-lightcontrol.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jackwilsdon/homebridge-lightcontrol/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "lightcontrol": "git://github.com/jackwilsdon/node-lightcontrol.git"
+  }
+}
