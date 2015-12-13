@@ -23,6 +23,10 @@ LightControlAccessory.prototype.setState = function(state, callback) {
     callback(null);
 };
 
+LightControlAccessory.prototype.getServices = function() {
+    return [ this.service ];
+}
+
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
