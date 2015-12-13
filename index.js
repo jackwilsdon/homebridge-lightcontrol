@@ -24,8 +24,8 @@ function LightControlAccessory(log, config) {
     }).bind(this));
 
     var onCharacteristic = this.service.getCharacteristic(Characteristic.On);
-    onCharacteristic.on('get', this.getState.bind(this));
-    onCharacteristic.on('set', this.setState.bind(this));
+    onCharacteristic.on("get", this.getState.bind(this));
+    onCharacteristic.on("set", this.setState.bind(this));
 }
 
 LightControlAccessory.prototype.getState = function(callback) {
