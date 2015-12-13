@@ -2,6 +2,12 @@ var lightcontrol = require("lightcontrol")
 var Service, Characteristic;
 
 function LightControlAccessory(log, config) {
+    ["name", "port", "group", "plug"].forEach(function(configKey) {
+        if (!config.hasOwnProperty(configKey)) {
+            throw new Error("missing config property " + configKey);
+        }
+    });
+
     this.log = log;
     this.name = config["name"];
     this.port = config["port"];
